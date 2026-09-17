@@ -28,7 +28,7 @@ El build genera una aplicación compatible con Cloudflare Workers en `dist/`.
 - `public/merakia-loop.webp`: imagen original de marca optimizada para web.
 - `public/favicon.svg`: favicon de Merakia.
 
-El WhatsApp comercial es +52 462 491 8864. La función `whatsapp()` centraliza el destino y el mensaje de cada botón. Los botones abren una conversación; no envían mensajes automáticamente.
+La función `whatsapp()` centraliza el destino y el mensaje de cada botón. Los botones abren una conversación; no envían mensajes automáticamente.
 
 ## Contenido y alcance
 
