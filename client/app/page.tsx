@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ArrowUpRight, ArrowRight, MessageCircle, Sparkles, Check, CheckCheck, Utensils, CalendarDays, Menu, X, Stethoscope, Workflow, Play, Plus, QrCode, CreditCard, ClipboardList } from "lucide-react";
 
-const whatsapp = (topic = "automatizar mi negocio") => `https://wa.me/524624918864?text=${encodeURIComponent(`Hola, Merakia. Me gustaría conocer más sobre ${topic}.`)}`;
+const whatsapp = (topic = "automatizar mi negocio") => `https://wa.me/524641008123?text=${encodeURIComponent(`Hola, Merakia. Me gustaría conocer más sobre ${topic}.`)}`;
 const scenarios = [
   { label: "Restaurante", icon: Utensils, name: "Tu restaurante", request: "¡Hola! ¿Puedo reservar una mesa para 4?", response: "¡Claro! Será un gusto recibirte. ¿Qué día y a qué hora te gustaría venir?", reply: "Este viernes a las 8:00 pm", result: "Reservación confirmada", detail: "Viernes · 8:00 pm · 4 personas" },
   { label: "Consultorio", icon: Stethoscope, name: "Tu consultorio", request: "Hola, quisiera agendar una consulta.", response: "Con gusto. Puedo ayudarte a consultar horarios y solicitar tu cita. ¿Prefieres mañana o tarde?", reply: "Por la tarde, por favor", result: "Solicitud de cita registrada", detail: "Turno de tarde · Por confirmar" },
