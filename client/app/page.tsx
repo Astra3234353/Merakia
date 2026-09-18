@@ -33,7 +33,14 @@ export default function Home() {
   return <>
     <a className="skip-link" href="#contenido">Ir al contenido</a>
     <header className="site-header" onKeyDown={event => { if (event.key === "Escape") setMenuOpen(false); }}>
-      <a className="wordmark" href="#" aria-label="Merakia, inicio"><span className="brand-symbol" aria-hidden="true">m<span>·</span></span>merakia<span className="wordmark-dot">*</span></a>
+      <a className="wordmark" href="#" aria-label="Merakia, inicio">
+        <img
+          src="/logo.png"
+          alt="Merakia"
+          className="w-24 h-26 md:w-26 md:h-28 object-contain shrink-0"
+          fetchPriority="high"
+        />
+      </a>
       <nav className={menuOpen ? "navigation is-open" : "navigation"} aria-label="Navegación principal">
         <a href="#soluciones" onClick={() => setMenuOpen(false)}>Soluciones</a>
         <a href="#proceso" onClick={() => setMenuOpen(false)}>Cómo funciona</a>
@@ -70,7 +77,7 @@ export default function Home() {
         <div className="section-heading"><div><div className="eyebrow">01 / SOLUCIONES CON PROPÓSITO</div><h2 id="solutions-title">Tu negocio es único.<br /><em>Tu automatización también.</em></h2></div><p>Nos encargamos de lo repetitivo sin perder lo que hace especial a tu atención. Tú pones la esencia. Nosotros, la tecnología.</p></div>
         <div className="solution-grid">
           <article className="solution-card restaurant-card"><div className="solution-icon"><Utensils size={25} /></div><span className="card-kicker">PARA RESTAURANTES</span><h3>Más mesas atendidas.<br />Menos mensajes pendientes.</h3><p>Del menú a la reservación, del pedido al cobro. Dale orden a las conversaciones de tu restaurante.</p><div className="mini-flow" aria-label="Flujo de atención para restaurantes"><span><QrCode size={18} />Menú</span><ArrowRight size={14} /><span><ClipboardList size={18} />Pedido</span><ArrowRight size={14} /><span><CreditCard size={18} />Pago</span></div><a className="card-link" href="#planes">Explora los planes <ArrowUpRight size={19} /></a></article>
-          <article className="solution-card"><div className="solution-icon"><Stethoscope size={25} /></div><span className="card-kicker">PARA CONSULTORIOS</span><h3>La atención empieza<br />antes de la consulta.</h3><p>Facilita las solicitudes de citas y las respuestas sobre horarios, ubicación y servicios de tu consultorio.</p><div className="service-chips"><span>Solicitudes de citas</span><span>Preguntas frecuentes</span></div><a className="card-link" href={whatsapp("una automatización a medida para mi consultorio")} target="_blank" rel="noopener noreferrer">Diseñemos tu solución <ArrowUpRight size={19} /></a></article>
+          <article className="solution-card"><div className="solution-icon"><Stethoscope size={25} /></div><span className="card-kicker">PARA CONSULTORIOS</span><h3>La atención empieza <br />antes de la consulta.</h3><p>Facilita las solicitudes de citas y las respuestas sobre horarios, ubicación y servicios de tu consultorio.</p><div className="service-chips"><span>Solicitudes de citas</span><span>Preguntas frecuentes</span></div><a className="card-link" href={whatsapp("una automatización a medida para mi consultorio")} target="_blank" rel="noopener noreferrer">Diseñemos tu solución <ArrowUpRight size={19} /></a></article>
           <article className="solution-card"><div className="solution-icon"><Workflow size={25} /></div><span className="card-kicker">PARA TU NEGOCIO</span><h3>Ese proceso que te quita<br />tiempo tiene solución.</h3><p>Conectamos las preguntas de tus clientes con el siguiente paso. Construimos el flujo que tu operación necesita.</p><div className="service-chips"><span>Chatbots con IA</span><span>Flujos a medida</span></div><a className="card-link" href={whatsapp("un chatbot y flujos personalizados para mi negocio")} target="_blank" rel="noopener noreferrer">Cuéntanos tu idea <ArrowUpRight size={19} /></a></article>
         </div>
         <div className="human-note"><Sparkles size={20} /><p>Automatizar también es cuidar: <strong>el tiempo de tu equipo y la experiencia de tus clientes.</strong></p></div>
@@ -103,7 +110,15 @@ export default function Home() {
       <section className="faq-section section-wrap" id="preguntas" aria-labelledby="faq-title"><div className="faq-intro"><div className="eyebrow">04 / CON TODA CLARIDAD</div><h2 id="faq-title">Buenas preguntas.<br /><em>Respuestas claras.</em></h2><p>Y si tienes otra en mente,<br />nos encantará escucharte.</p><a className="text-link" href={whatsapp("una duda sobre sus servicios")} target="_blank" rel="noopener noreferrer">Escríbenos <ArrowUpRight size={17} /></a></div><div className="faq-list">{questions.map(item => <details key={item.q}><summary>{item.q}<Plus size={19} /></summary><p>{item.a}</p></details>)}</div></section>
 
       <section className="contact-section" id="contacto"><div className="contact-inner section-wrap"><div className="eyebrow"><span className="tiny-spark">✳</span> EL SIGUIENTE PASO ES MÁS SIMPLE</div><h2>Haz espacio para<br /><em>lo que viene.</em></h2><p>Cuéntanos qué te gustaría dejar de hacer manualmente.<br />Juntos encontramos por dónde empezar.</p><a className="button button-cream" href={whatsapp()} target="_blank" rel="noopener noreferrer"><MessageCircle size={19} /> Hablemos de tu negocio <ArrowUpRight size={20} /></a><span className="contact-phone">WhatsApp · +52 464 100 8123</span></div><span className="contact-asterisk" aria-hidden="true">✳</span></section>
-      <footer className="footer section-wrap"><a className="wordmark" href="#" aria-label="Merakia, volver al inicio"><span className="brand-symbol" aria-hidden="true">m<span>·</span></span>merakia<span className="wordmark-dot">*</span></a><p>Tecnología con intención. Tiempo para lo tuyo.</p><span>© 2026 Merakia</span><a href={whatsapp()} target="_blank" rel="noopener noreferrer" aria-label="Contactar a Merakia por WhatsApp"><MessageCircle size={21} /></a></footer>
+      <footer className="footer section-wrap"><a className="wordmark" href="#" aria-label="Merakia, volver al inicio">
+        
+          <img
+          src="/logo.png"
+          alt="Merakia"
+          className="w-20 md:w-26 object-contain shrink-0"
+          fetchPriority="high"
+        />
+        </a><p>Tecnología con intención. Tiempo para lo tuyo.</p><span>© 2026 Merakia</span><a href={whatsapp()} target="_blank" rel="noopener noreferrer" aria-label="Contactar a Merakia por WhatsApp"><MessageCircle size={21} /></a></footer>
     </main>
   </>;
 }
