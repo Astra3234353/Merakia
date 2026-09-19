@@ -17,7 +17,7 @@
 .section-heading>p,.solution-card>p,.process-grid p,.faq-list details>p{font-size:16px}
 @media(max-width:480px){.hero h1{font-size:clamp(44px,13vw,59px)}.hero-note{column-gap:7px;row-gap:4px}.hero-note>span{display:inline}.faq-intro p br{display:initial}}
 /* Channel packages and the optional orders + CRM upgrade. */
-.pricing-tax-label{display:block;margin-top:14px;font-size:14px;color:var(--brown)}
+.pricing-tax-label{display:block;margin-top:14px;font-size:12px;color:var(--brown)}
 .plans-grid{align-items:start;gap:20px}
 .plans-grid .plan-card{padding:0;overflow:hidden}
 .plan-main{display:flex;flex-direction:column;padding:28px 25px;min-height:790px}
@@ -43,3 +43,12 @@
 @media(max-width:1100px) and (min-width:851px){.plan-main{padding:23px 18px;min-height:860px}.plan-main h3{font-size:25px}.complete-option{padding:23px 18px}.price-breakdown>div{flex-wrap:wrap;gap:3px}.plan-main .plan-price{font-size:39px}.plan-main .plan-tag{font-size:12px}}
 @media(max-width:850px){.plan-main{min-height:0;padding:30px}.plan-main h3{min-height:0;font-size:31px}.plan-main .plan-subtitle{min-height:0}.discount-line:empty{display:none}.price-breakdown{min-height:0}.plan-main .plan-note{min-height:0}.complete-option{padding:28px 30px}.complete-total{max-width:470px}.complete-link{max-width:470px}.plan-main .button{max-width:100%}}
 @media(max-width:480px){.plan-main{padding:26px 23px}.plan-main h3{font-size:28px}.complete-option{padding:25px 23px}.plan-main .plan-price{font-size:44px}.plan-main .plan-tag{font-size:12px}.price-breakdown>div{font-size:14px}.complete-total strong{font-size:27px}}
+/* Supplied transparent logo: retain the original file and frame its visible bounds. */
+.brand-logo{position:relative;display:block;width:140px;height:78px;flex-shrink:0;overflow:hidden}
+.brand-logo img{position:absolute;max-width:none;width:107.818%;height:auto;left:-4.468%;top:-27.15%}
+.footer .brand-logo{width:144px;height:80px}
+.tax-note{display:block;font-size:12px;line-height:1.6}
+.complete-breakdown{min-height:0;margin:18px 0 0;padding:14px 0}
+.complete-total{padding-top:15px}
+@media(max-width:480px){.site-header .brand-logo{width:112px;height:62px}.plan-main{min-height:0}.complete-breakdown>div{flex-wrap:wrap;gap:3px}}
+@media(min-width:481px) and (max-width:850px){.site-header .brand-logo{width:116px;height:64px}}

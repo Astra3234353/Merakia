@@ -26,23 +26,25 @@ El build genera una aplicación compatible con Cloudflare Workers en `dist/`.
 - `app/globals.css`: estilos y paleta de marca.
 - `app/layout.tsx`: idioma, título y descripción.
 - `public/merakia-loop.webp`: imagen original de marca optimizada para web.
-- `public/favicon.svg`: favicon de Merakia.
+- `public/merakia-symbol.png`: símbolo de Merakia utilizado como favicon.
 
-La función `whatsapp()` centraliza el destino y el mensaje de cada botón. Los botones abren una conversación; no envían mensajes automáticamente.
+El WhatsApp comercial es +52 462 491 8864. La función `whatsapp()` centraliza el destino y el mensaje de cada botón. Los botones abren una conversación; no envían mensajes automáticamente.
 
 ## Contenido y alcance
 
-La oferta conserva el alcance general de la cotización original y usa los paquetes de la tabla actualizada proporcionada el 17 de septiembre de 2026. Todos los importes publicados son MXN sin IVA. Los precios principales representan implementación + 12 mensualidades, sin implicar un cobro anual anticipado:
+La oferta usa los precios de COT 2, fechada el 18 de septiembre de 2026. Todos los importes publicados son MXN sin IVA. Los precios principales representan implementación + 12 mensualidades, sin implicar un cobro anual anticipado:
 
 | Paquete | Implementación | Mensualidad | Primer año |
 | --- | ---: | ---: | ---: |
-| Estándar Instagram | $3,500 | $550 | $10,100 |
-| Estándar WhatsApp | $6,000 | $550 | $12,600 |
-| WhatsApp Completo con pedidos y CRM | $12,000 | $550 | $18,600 |
-| Doble Instagram + WhatsApp | $6,800 base | $800 | ~~$16,400~~ $14,800 |
-| Doble Completo con pedidos y CRM | $10,800 base | $800 | ~~$20,400~~ $18,800 |
+| Starter Instagram | $4,500 | $550 | $11,100 |
+| Básico WhatsApp | $6,000 | $550 | $12,600 |
+| Completo WhatsApp con pedidos, cobros y CRM | $12,000 | $800 | $21,600 |
+| Double Instagram + WhatsApp | $6,800 | $800 | $16,400 |
+| Completo Double con pedidos, cobros y CRM | $10,800 | $800 | $20,400 |
 
-El descuento de $1,600 se aplica al total del primer año de ambas versiones Doble. El usuario confirmó expresamente $18,800 para el Doble Completo. No se inventa una distribución del descuento entre anticipo, implementación o mensualidades; se acuerda en la cotización. La opción Completo suma $6,000 a WhatsApp o $4,000 a Doble e incluye pedidos y CRM. No se publican los cálculos internos ni los totales con IVA de la imagen.
+La nueva cotización reemplaza los descuentos anteriores por los totales regulares. En Básico se usan los valores coherentes del documento ($6,000 de implementación y $550 mensuales, total $12,600); la fórmula impresa contiene erratas. La opción Completo suma $6,000 de implementación a WhatsApp o $4,000 a Double, y tiene mensualidad de $800. Se conserva el CRM solicitado expresamente por el usuario junto a pedidos y cobros. No se publica el nombre del cliente ni la vigencia particular de su cotización.
+
+El logo original proporcionado por el usuario está en `public/merakia-logo.png` y se muestra en cabecera y pie; `public/merakia-symbol.png` conserva el símbolo alternativo. Los PNG se mantienen sin modificar y el encuadre se realiza con CSS.
 
 Los ejemplos de conversación son demostraciones de interfaz con contenido predefinido. No son bots conectados a una API, no crean citas, no procesan pedidos y no cobran. La landing no requiere claves de IA ni almacena datos de visitantes. Consultorios y otros negocios se ofrecen a medida, sin asignarles los planes del restaurante.
 
